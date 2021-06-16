@@ -15,6 +15,7 @@ import java.util.Objects;
 public class LoginController {
     @Value("${app.secret}")
     private String secret;
+    private String secret2;
 
     @CrossOrigin(origins = "*")
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
